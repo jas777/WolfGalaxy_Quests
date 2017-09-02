@@ -1,16 +1,18 @@
 package net.wolfgalaxy.quests;
 
+import org.apache.logging.log4j.core.util.SystemClock;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin {
 
+    private static Main instance;
+
     public void onEnable(){
-
-        System.out.println("Quests enabled.");
-
+        instance = this;
         registerCommands();
         registerEvents();
 
+        System.out.println("W[]olfGalaxy_Quests Enabled!");
     }
 
     public void onDisable(){
@@ -21,8 +23,6 @@ public class Main extends JavaPlugin {
 
     public void registerCommands(){
 
-
-
     }
 
     public void registerEvents(){
@@ -30,5 +30,9 @@ public class Main extends JavaPlugin {
 
 
     }
+
+    public static Main getInstance() {
+        return instance;
+    }//Okey hold on.
 
 }

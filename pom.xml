@@ -1,46 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
+<s:project xmlns:s="http://maven.apache.org/POM/4.0.0"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <s:modelVersion>4.0.0</s:modelVersion>
 
-    <groupId>WolfGalaxyDevTeam</groupId>
-    <artifactId>WolfGalaxyQuests</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <s:groupId>WolfGalaxyDevTeam</s:groupId>
+    <s:artifactId>WolfGalaxy_Quests</s:artifactId>
+    <s:version>1.0-SNAPSHOT</s:version>
 
-    <repositories>
-        <repository>
-            <id>spigot-repo</id>
-            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
-        </repository>
-        <repository>
-            <id>spigot-repo</id>
-            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
-        </repository>
-    </repositories>
-    <dependencies>
-        <!--Spigot API-->
-        <dependency>
-            <groupId>org.spigotmc</groupId>
-            <artifactId>spigot-api</artifactId>
-            <version>1.12-R0.1-SNAPSHOT</version>
-            <scope>provided</scope>
-        </dependency>
-        <!-- Spigot -->
-        <dependency>
-            <groupId>org.spigotmc</groupId>
-            <artifactId>spigot</artifactId>
-            <version>1.12-R0.1-SNAPSHOT</version>
-            <scope>provided</scope>
-        </dependency>
-        <!--Bukkit API-->
-        <dependency>
-            <groupId>org.bukkit</groupId>
-            <artifactId>bukkit</artifactId>
-            <version>1.12-R0.1-SNAPSHOT</version>
-            <scope>provided</scope>
-        </dependency>
-    </dependencies>
+    <s:repositories>
 
+        <s:repository>
+            <s:id>spigot-repo</s:id>
+            <s:url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</s:url>
+        </s:repository>
 
-</project>
+    </s:repositories>
+    <s:dependencies>
+    <!--Spigot API-->
+    <s:dependency>
+        <s:groupId>org.spigotmc</s:groupId>
+        <s:artifactId>spigot-api</s:artifactId>
+        <s:version>1.12-R0.1-SNAPSHOT</s:version>
+        <s:scope>provided</s:scope>
+    </s:dependency>
+    <!--Bukkit API-->
+    <s:dependency>
+        <s:groupId>org.bukkit</s:groupId>
+        <s:artifactId>bukkit</s:artifactId>
+        <s:version>1.12-R0.1-SNAPSHOT</s:version>
+        <s:scope>provided</s:scope>
+    </s:dependency>
+</s:dependencies>
+//Ctrl + Alt + Shift + S
+</s:project>

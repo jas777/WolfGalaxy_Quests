@@ -1,5 +1,12 @@
+main: net.wolfgalaxy.quests.Main
 name: WolfGalaxyQuests
 version: 0.1-PRE-ALPHA
-main: net.wolfgalaxy.quests.Main
 author: WolfGalaxyDevTeam
+description: Wolfgalaxy (c) 2017
 commands:
+   Yep:
+      description: This is the description
+      permission: <plugin name>
+   Nope:
+      description: This is the description
+      permission: <plugin name>
