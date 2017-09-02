@@ -1,0 +1,5 @@
+name: WolfGalaxyQuests
+version: 0.1-PRE-ALPHA
+main: net.wolfgalaxy.quests.Main
+author: WolfGalaxyDevTeam
+commands:
