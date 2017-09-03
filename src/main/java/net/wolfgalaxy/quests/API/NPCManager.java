@@ -2,6 +2,7 @@ package net.wolfgalaxy.quests.API;
 
 import net.wolfgalaxy.quests.Main;
 import org.bukkit.Location;
+import org.bukkit.entity.Entity;
 import org.bukkit.entity.EntityType;
 import org.bukkit.event.Listener;
 
@@ -37,6 +38,10 @@ public class NPCManager implements Listener {
 		NPC npc = registry.createNPC(entityType,displayName);
 		npc.spawn(loc);
 		return npc;
+	}
+
+	public NPC findNPCByID(int ID) {
+		return registry.getById(ID);
 	}
 
 }
