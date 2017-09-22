@@ -1,26 +1,20 @@
 package net.wolfgalaxy.quests.API;
 
-import net.wolfgalaxy.quests.Main;
 import org.bukkit.Location;
-import org.bukkit.entity.Entity;
 import org.bukkit.entity.EntityType;
-import org.bukkit.event.Listener;
 
 import net.citizensnpcs.api.CitizensAPI;
 import net.citizensnpcs.api.npc.NPC;
 import net.citizensnpcs.api.npc.NPCRegistry;
 
-import java.util.UUID;
-
-public class NPCManager implements Listener {
+public class NPCManager {
 	
 	private static NPCManager nm;
 	private NPCRegistry registry;
 
 	public NPCManager() {
 		registry = CitizensAPI.getNPCRegistry();
-		Main.getInstance().getServer().getPluginManager().registerEvents(this, Main.getInstance());
-	}//Done
+	}
 
 	public static NPCManager getManager() {
 		if (nm == null)nm = new NPCManager();

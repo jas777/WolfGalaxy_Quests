@@ -11,6 +11,7 @@ import org.bukkit.entity.Player;
 public enum QuestType {
 
     Collect(CollectQuest.class);
+    //Travel(TravelQuest.class);
 
     private Class<Quest> _questType;
 
@@ -18,7 +19,7 @@ public enum QuestType {
         _questType = (Class<Quest>) c;
     }
 
-    public Quest createNew(String questName, Location loc) {
+    public Quest createNew(String questName) {
         Quest quest = null;
         try {
             quest = _questType.newInstance();
@@ -29,24 +30,7 @@ public enum QuestType {
         }
         if (quest == null)return null;
 
-        NPC npc = NPCManager.getManager().createNPC(questName, loc, EntityType.PLAYER);
-        quest.initialize(questName,npc);
-
-        return quest;
-    }
-
-    public Quest createNew(String questName, NPC npc) {
-        Quest quest = null;
-        try {
-            quest = _questType.newInstance();
-        } catch (InstantiationException e) {
-            e.printStackTrace();
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        }
-        if (quest == null)return null;
-
-        quest.initialize(questName,npc);
+        quest.setQuestName(questName);
 
         return quest;
     }
